@@ -4,6 +4,7 @@ body {
     padding: 0;
     background-color: #fff;
     color: #333;
+    overflow-x: hidden;
   }
   
   header {
@@ -34,19 +35,25 @@ body {
     margin-bottom: 20px;
     color: #333;
   }
-  
+
   .timer-container {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 40px;
+    overflow-x: hidden; /* Maintain overflow hidden for mobile */
+    flex-wrap: wrap; /* Wrap timer elements on smaller screens */
   }
   
   .timer-container span {
-    font-size: 1.5em;
-    margin: 0 10px;
+    font-size: 1.2em; /* Reduce font size slightly for mobile */
+    margin: 0 5px; /* Adjust margin for better spacing on mobile */
   }
   
+  .timer-container span:nth-child(2), .timer-container span:nth-child(4), .timer-container span:nth-child(6), .timer-container span:nth-child(8) {
+    color: red;
+  }
+   
   .timer-container span:nth-child(2), .timer-container span:nth-child(4), .timer-container span:nth-child(6), .timer-container span:nth-child(8) {
     color: red;
   }
