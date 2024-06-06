@@ -1,5 +1,5 @@
 // Set launch date (adjust as needed)
-const launchDate = new Date("2024-06-01"); // Replace with your desired launch date
+const launchDate = new Date("2024-06-10"); // Replace with your desired launch date
 
 const daysElement = document.getElementById("days");
 const hoursElement = document.getElementById("hours");
